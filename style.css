@@ -1,0 +1,33 @@
+body{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 0;
+
+}
+.photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+img{
+    min-width: max(40vw, 67vh);
+    min-height:100vh;
+    
+
+    
+}
+.logo{
+    background-color: rgba(0,0,0,.5);
+    
+}
+
+.sign-up{
+    min-width: 60vw;
+    display:flex;
+    flex-direction:column;
+}
