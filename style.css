@@ -3,6 +3,7 @@
     font-family: Norse;
     src: url(Norse-Bold.otf);
 }
+
 body{
     display:flex;
     flex-direction:row;
@@ -35,18 +36,19 @@ body{
     display: flex;
     width: 100%;
     top: 50vh;
-    min-height: 100px;
     height: 20vh;
+    min-height: 100px;
     width: 40vw;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.5); 
     font-family: Norse;
-    color: white;
-    font-size: max(100px, calc(16px + 15vh));
+    font-size: max(100px, calc(20vh));
+    color:white;
 }
 
 #odin{
     max-height: 100%;
 }
+
 
 
 .sign-up{
