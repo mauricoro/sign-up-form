@@ -37,11 +37,11 @@ body{
     width: 100%;
     top: 50vh;
     height: 20vh;
-    min-height: 100px;
+    min-height: 150px;
     width: 40vw;
     background-color: rgba(0,0,0,.5); 
-    font-family: Norse;
-    font-size: max(100px, calc(20vh));
+    font-family: Norse, Raleway, Arial, Helvetica, sans-serif;
+    font-size: max(120px, calc(20vh));
     color:white;
 }
 
@@ -49,10 +49,33 @@ body{
     max-height: 100%;
 }
 
+.credit{
+    font-family: Raleway;
+    font-weight: bold;
+    position:absolute;
+    color: white;
+    bottom: 3vh;
+}
 
+a{  
+    color: white;
+    text-decoration-color: white;
+}
 
 .sign-up{
-    min-width: 60vw;
+    width: 60vw;
     display:flex;
     flex-direction:column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.inspiration{
+    max-height: 30%;
+    max-width: 100%;
+    height: 20vh;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: calc(16px + 1vw);
+    padding: 1vw;
 }
