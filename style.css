@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
 body{
     display:flex;
     flex-direction:row;
@@ -27,15 +31,22 @@ body{
 .logo{
     position: absolute;
     justify-content: center;
+    align-items: center;
     display: flex;
     width: 100%;
     top: 50vh;
+    min-height: 100px;
     height: 20vh;
     width: 40vw;
-    background-color: rgba(0,0,0,.5); 
+    background-color: rgba(0,0,0,.5);
+    font-family: Norse;
+    color: white;
+    font-size: max(100px, calc(16px + 15vh));
 }
 
-
+#odin{
+    max-height: 100%;
+}
 
 
 .sign-up{
