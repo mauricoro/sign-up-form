@@ -18,15 +18,72 @@
     
     
     
-    <div class="sign-up">
+    <div class="sign_up">
         <div class="inspiration">
             <p>This is a fake online service!</p>
             <p>This would let you schedule a meeting with an Alpaca to accompany you for a while and provide comfort.</p>
         </div>
-        <div class="input"></div>
-        <div class="confirm"></div>
+        <div class="input_container">
+            <p>Sign up!</p>
+            <div class="input">
+                <div class="column">
+                    <div>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" placeholder="Enter your first name">
+                    </div>
+                    <div>
+                        <label for="email_text">Email:</label>
+                        <input type="email" id="email_text" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="password_text">Password:</label>
+                        <input type="password" id="password_text" placeholder="Password">
+                    </div>
+                    <p>* Passwords do not match</p>
+                </div>
+                <div class="column">
+                    <div>
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" placeholder="Enter your last name">
+                    </div>
+                    <div>
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    </div>
+                    <div>
+                        <label for="confirm_text">Confirm Password:</label>
+                        <input type="password" id="confirm_text" placeholder="Password">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="confirm">
+            <button type="button">Create Account</button>
+            <p>Already have an account? <a href="https://www.britannica.com/story/whats-the-difference-between-llamas-and-alpacas" text-decoration: none>Log in</a></p>
+        </div>
     </div>
 
     
 </body>
+<script>
+    let password = document.querySelector("#password_text");
+    let password_confirm = document.querySelector("#confirm_text");
+    let error_text = document.querySelector(".column p");
+    password.addEventListener("change", checkPasswords);
+    password_confirm.addEventListener("change", checkPasswords);
+
+    function checkPasswords(){
+        if(password_confirm.value != password.value){
+            error_text.style.visibility = "visible";
+            password.classList.add("error");
+            password_confirm.classList.add("error");
+        }
+        else{
+            error_text.style.visibility = "hidden";
+            password.classList.remove("error");
+            password_confirm.classList.remove("error");
+        }
+
+    }
+</script>
 </html>
